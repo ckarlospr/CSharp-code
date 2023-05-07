@@ -9,7 +9,10 @@ namespace CursoProgramacion
 
         private void button1_Click(object sender, EventArgs e)
         {
-            label1.Text = "Texto cambiado";
+            String prueba = "prueba de manejo";
+            label1.Text = prueba;
+            byte b = (byte)12;
+            MessageBox.Show(b+"");
         }
     }
 }
