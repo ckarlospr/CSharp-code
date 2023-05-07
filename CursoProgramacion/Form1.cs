@@ -27,7 +27,7 @@ namespace CursoProgramacion
 
             List<int> lista = new List<int>();
             lista.Add(2);
-            lista.Add(20);   
+            lista.Add(20);
             lista.Add(15);
             lista.Add(100);
 

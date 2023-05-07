@@ -68,7 +68,7 @@
             // lblResultado
             // 
             lblResultado.AutoSize = true;
-            lblResultado.Location = new Point(138, 97);
+            lblResultado.Location = new Point(137, 95);
             lblResultado.Name = "lblResultado";
             lblResultado.Size = new Size(13, 15);
             lblResultado.TabIndex = 3;
@@ -94,7 +94,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(253, 188);
             Controls.Add(txtPeso);
             Controls.Add(txtAltura);
             Controls.Add(lblResultado);
