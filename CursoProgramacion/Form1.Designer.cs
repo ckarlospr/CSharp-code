@@ -30,6 +30,10 @@
         {
             label1 = new Label();
             button1 = new Button();
+            label2 = new Label();
+            lblResultado = new Label();
+            txtAltura = new TextBox();
+            txtPeso = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -38,25 +42,63 @@
             label1.ForeColor = Color.Blue;
             label1.Location = new Point(53, 34);
             label1.Name = "label1";
-            label1.Size = new Size(74, 15);
+            label1.Size = new Size(42, 15);
             label1.TabIndex = 0;
-            label1.Text = "Hola Mundo";
+            label1.Text = "Altura:";
             // 
             // button1
             // 
-            button1.Location = new Point(198, 30);
+            button1.Location = new Point(95, 125);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 1;
+            button1.Size = new Size(100, 23);
+            button1.TabIndex = 3;
             button1.Text = "Cambiar";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(54, 60);
+            label2.Name = "label2";
+            label2.Size = new Size(35, 15);
+            label2.TabIndex = 2;
+            label2.Text = "Peso:";
+            // 
+            // lblResultado
+            // 
+            lblResultado.AutoSize = true;
+            lblResultado.Location = new Point(138, 97);
+            lblResultado.Name = "lblResultado";
+            lblResultado.Size = new Size(13, 15);
+            lblResultado.TabIndex = 3;
+            lblResultado.Text = "0";
+            // 
+            // txtAltura
+            // 
+            txtAltura.Location = new Point(95, 31);
+            txtAltura.Name = "txtAltura";
+            txtAltura.Size = new Size(100, 23);
+            txtAltura.TabIndex = 1;
+            txtAltura.TextAlign = HorizontalAlignment.Center;
+            // 
+            // txtPeso
+            // 
+            txtPeso.Location = new Point(95, 57);
+            txtPeso.Name = "txtPeso";
+            txtPeso.Size = new Size(100, 23);
+            txtPeso.TabIndex = 2;
+            txtPeso.TextAlign = HorizontalAlignment.Center;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(txtPeso);
+            Controls.Add(txtAltura);
+            Controls.Add(lblResultado);
+            Controls.Add(label2);
             Controls.Add(button1);
             Controls.Add(label1);
             Name = "Form1";
@@ -69,5 +111,9 @@
 
         private Label label1;
         private Button button1;
+        private Label label2;
+        private Label lblResultado;
+        private TextBox txtAltura;
+        private TextBox txtPeso;
     }
 }
